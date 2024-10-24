@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Табличные данные</title>
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<h2 align="center"><i> Табличные данные</i></h2>	
+
+		<h5>Меню</h5>		
+		<ul>
+			<li><a href="site.html" target="_self">Главная </a></li>
+			<li><a href="page2.html" target="_self">'Зверобой ИСУ-152'</a></li>
+			<li>Статистика</li>
+		</ul>
+	<hr>
+		
+	<details>
+	<summary><i>График</i></summary>
+	<table>
+		<tr align="center">
+			<th> По оси ОХ</th>
+			<th> Результат </th>
+		<tr>
+			<td>
+	<input type="radio" name="quest" value="0"> Тип <br>
+  <input type="radio" name="quest" value="1"> Нация <br>
+  <input type="radio" name="quest" value="2"> Роль <br>
+</td>
+<td>
+	  <input type="checkbox" name="quest1" value="0"> Минимальная скорострельность <br>
+	  <input type="checkbox" name="quest1" value="1"> Максимальное скорострельность <br>
+	  <input type="checkbox" name="quest1" value="0"> Минимальное время ремонта ходовой <br>
+	  <input type="checkbox" name="quest1" value="1"> Максимальное время ремонта ходовой <br>
+
+</td>
+</tr>
+</table>
+<input type="submit" value="Построить">
+</details>
+	
+	
+<details>
+<summary><i>Фильтр</i></summary>
+	Название: <input type="text"> <br>
+	Тип: <input type="text"> <br>
+	Роль: <input type="text"> <br>
+  Время перезарядки орудия от: <input type="text">  до: <input type="text"> <br>
+  Скорострельность от: <input type="text">  до: <input type="text"> <br>
+  <input type="submit" value="Найти">
+</details>
+
+
+<details>
+<summary><i>Сортировка</i></summary>
+	Первый уровень: <select name="choose1">
+ 	<option value="0"> Название </option>
+ 	<option value="1"> Нация </option>
+ 	<option value="2" selected> Тип </option>
+ 	<option value="3"> Роль </option>
+ 	<option value="4"> Время перезарядки орудия </option>
+ 	<option value="5"> Скорострельность </option>
+	<option value="6"> Время ремонта ходовой </option>
+	<option value="7"> Масса </option>
+</select> по убыванию?  <input type="checkbox" name="check" value="0"> 
+
+	Второй уровень: <select name="choose2">
+ <option value="1"> Название </option>
+ <option value="2"> Нация </option>
+ <option value="3" selected> Тип </option>
+ <option value="4"> Роль </option>
+ <option value="5"> Время перезарядки орудия </option>
+ <option value="6"> Скорострельность </option>
+<option value="7"> Время ремонта ходовой </option>
+<option value="8"> Масса </option>
+</select> по убыванию?  <input type="checkbox" name="check" value="0">
+
+	Третий уровень: <select name="choose3">
+ <option value="1"> Название </option>
+ <option value="2"> Нация </option>
+ <option value="3" selected> Тип </option>
+ <option value="4"> Роль </option>
+ <option value="5"> Время перезарядки орудия </option>
+ <option value="6"> Скорострельность </option>
+	<option value="7"> Время ремонта ходовой </option>
+	<option value="8"> Масса </option>
+	</select> по убыванию?  <input type="checkbox" name="check" value="0"> 
+	<input type="submit" value="Сортировать">
+</details>
+
+
+<img src="pictures/tanks.png" width="702" height="168" alt="photo"> 
+<img src="pictures/tanks.png" width="702" height="168" alt="photo">
+<table border="1" cellpadding="15" align="center">
+<thead  align="center">
+		<tr bgcolor="808080">
+			<th>Название</th>
+			<th>Нация</th>
+			<th>Тип</th>
+			<th>Роль</th>
+			<th>Время перезарядки орудия(с)</th>
+			<th>Скорострельность(выс/м)</th>
+			<th>Время ремонта ходовой(с)</th>
+			<th>Масса(т)</th>
+		</tr>
+
+		<tr bgcolor="C0C0C0">
+    <th>КВ-2</th>
+    <td>СССР</td>
+    <td>Тяжёлый танк</td>
+    <td>Тяжёлый танк поддержки</td>
+    <td>11</td>
+    <td>5,45</td>
+    <td>12,03</td>
+    <td>51,16</td>
+</tr>
+<tr bgcolor="808080">
+    <th>Tiger I</th>
+    <td>Германия</td>
+    <td>Тяжёлый танк</td>
+    <td>Тяжёлый танк наступления</td>
+    <td>8</td>
+    <td>6,44</td>
+    <td>11,42</td>
+    <td>58,12</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>IS-7</th>
+    <td>СССР</td>
+    <td>Тяжёлый танк</td>
+    <td>Танк прорыва</td>
+    <td>10,5</td>
+    <td>5,71</td>
+    <td>10,88</td>
+    <td>68,5</td>
+</tr>
+<tr bgcolor="808080">
+    <th>Maus</th>
+    <td>Германия</td>
+    <td>Тяжёлый танк</td>
+    <td>Супертяжёлый танк</td>
+    <td>13,0</td>
+    <td>4,61</td>
+    <td>15,34</td>
+    <td>188,9</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>Object 430U</th>
+    <td>СССР</td>
+    <td>Средний танк</td>
+    <td>Танк поддержки</td>
+    <td>8,8</td>
+    <td>6,82</td>
+    <td>10,21</td>
+    <td>45,0</td>
+</tr>
+<tr bgcolor="808080">
+    <th>Leopard 1</th>
+    <td>Германия</td>
+    <td>Средний танк</td>
+    <td>Снайпер</td>
+    <td>7,5</td>
+    <td>8,00</td>
+    <td>8,45</td>
+    <td>40,0</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>STB-1</th>
+    <td>Япония</td>
+    <td>Средний танк</td>
+    <td>Универсальный боец</td>
+    <td>7,2</td>
+    <td>8,33</td>
+    <td>9,14</td>
+    <td>38,0</td>
+</tr>
+<tr bgcolor="808080">
+    <th>AMX 50 B</th>
+    <td>Франция</td>
+    <td>Тяжёлый танк</td>
+    <td>Тяжёлый танк прорыва</td>
+    <td>25,0</td>
+    <td>2,4</td>
+    <td>9,3</td>
+    <td>62,5</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>T57 Heavy</th>
+    <td>США</td>
+    <td>Тяжёлый танк</td>
+    <td>Барабанный танк</td>
+    <td>22,0</td>
+    <td>2,73</td>
+    <td>10,44</td>
+    <td>54,4</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>ИСУ-152 Зверобой</th>
+    <td>СССР</td>
+    <td>ПТ-САУ</td>
+    <td>ПТ-САУ огневой поддержки</td>
+    <td>15,2</td>
+    <td>3,95</td>
+    <td>11,7</td>
+    <td>45,5</td>
+</tr>
+<tr bgcolor="808080">
+    <th>WZ-111 model 5A</th>
+    <td>Китай</td>
+    <td>Тяжёлый танк</td>
+    <td>Танк прорыва</td>
+    <td>9,7</td>
+    <td>6,19</td>
+    <td>9,94</td>
+    <td>50,5</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>Super Conqueror</th>
+    <td>Великобритания</td>
+    <td>Тяжёлый танк</td>
+    <td>Универсальный тяжёлый танк</td>
+    <td>8,6</td>
+    <td>6,98</td>
+    <td>9,72</td>
+    <td>66,8</td>
+</tr>
+<tr bgcolor="808080">
+    <th>T110E5</th>
+    <td>США</td>
+    <td>Тяжёлый танк</td>
+    <td>Универсальный тяжёлый танк</td>
+    <td>8,5</td>
+    <td>7,05</td>
+    <td>10,34</td>
+    <td>60,3</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>Centurion Action X</th>
+    <td>Великобритания</td>
+    <td>Средний танк</td>
+    <td>Танк поддержки</td>
+    <td>7,9</td>
+    <td>7,6</td>
+    <td>9,9</td>
+    <td>55,0</td>
+</tr>
+<tr bgcolor="808080">
+    <th>E 100</th>
+    <td>Германия</td>
+    <td>Тяжёлый танк</td>
+    <td>Супертяжёлый танк</td>
+    <td>15,0</td>
+    <td>4,0</td>
+    <td>14,6</td>
+    <td>130,0</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>Bat.-Châtillon 25 t</th>
+    <td>Франция</td>
+    <td>Средний танк</td>
+    <td>Лёгкий барабанный танк</td>
+    <td>24,0</td>
+    <td>3,13</td>
+    <td>9,2</td>
+    <td>25,0</td>
+</tr>
+<tr bgcolor="808080">
+    <th>Object 277</th>
+    <td>СССР</td>
+    <td>Тяжёлый танк</td>
+    <td>Танк наступления</td>
+    <td>10,2</td>
+    <td>5,88</td>
+    <td>10,7</td>
+    <td>65,7</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>FV215b</th>
+    <td>Великобритания</td>
+    <td>Тяжёлый танк</td>
+    <td>Универсальный тяжёлый танк</td>
+    <td>8,7</td>
+    <td>6,89</td>
+    <td>9,81</td>
+    <td>70,0</td>
+</tr>
+<tr bgcolor="808080">
+    <th>Object 140</th>
+    <td>СССР</td>
+    <td>Средний танк</td>
+    <td>Танк поддержки</td>
+    <td>7,1</td>
+    <td>8,45</td>
+    <td>8,12</td>
+    <td>45,0</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>IS-4</th>
+    <td>СССР</td>
+    <td>Тяжёлый танк</td>
+    <td>Танк прорыва</td>
+    <td>12,0</td>
+    <td>5,0</td>
+    <td>11,5</td>
+    <td>59,25</td>
+</tr>
+<tr bgcolor="808080">
+    <th>M48A5 Patton</th>
+    <td>США</td>
+    <td>Средний танк</td>
+    <td>Танк поддержки</td>
+    <td>7,5</td>
+    <td>8,0</td>
+    <td>9,0</td>
+    <td>45,0</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>Type 5 Heavy</th>
+    <td>Япония</td>
+    <td>Тяжёлый танк</td>
+    <td>Супертяжёлый танк</td>
+    <td>14,0</td>
+    <td>4,29</td>
+    <td>15,0</td>
+    <td>150,0</td>
+</tr>
+<tr bgcolor="808080">
+    <th>Kranvagn</th>
+    <td>Швеция</td>
+    <td>Тяжёлый танк</td>
+    <td>Барабанный танк</td>
+    <td>23,0</td>
+    <td>2,61</td>
+    <td>10,6</td>
+    <td>53,3</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>Object 268 Version 4</th>
+    <td>СССР</td>
+    <td>ПТ-САУ</td>
+    <td>Агрессивная ПТ-САУ</td>
+    <td>11,5</td>
+    <td>5,22</td>
+    <td>10,4</td>
+    <td>75,0</td>
+</tr>
+<tr bgcolor="808080">
+    <th>FV4005 Stage II</th>
+    <td>Великобритания</td>
+    <td>ПТ-САУ</td>
+    <td>ПТ-САУ с фугасным орудием</td>
+    <td>22,0</td>
+    <td>2,73</td>
+    <td>12,2</td>
+    <td>50,0</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>Grille 15</th>
+    <td>Германия</td>
+    <td>ПТ-САУ</td>
+    <td>Снайперская ПТ-САУ</td>
+    <td>10,5</td>
+    <td>5,71</td>
+    <td>9,15</td>
+    <td>41,0</td>
+</tr>
+<tr bgcolor="808080">
+    <th>Strv 103B</th>
+    <td>Швеция</td>
+    <td>ПТ-САУ</td>
+    <td>ПТ-САУ с осадным режимом</td>
+    <td>9,5</td>
+    <td>6,32</td>
+    <td>9,84</td>
+    <td>40,0</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>Progetto M40 mod. 65</th>
+    <td>Италия</td>
+    <td>Средний танк</td>
+    <td>Барабанный танк</td>
+    <td>12,0</td>
+    <td>4,85</td>
+    <td>10,1</td>
+    <td>44,5</td>
+</tr>
+<tr bgcolor="808080">
+    <th>Rinoceronte</th>
+    <td>Италия</td>
+    <td>Тяжёлый танк</td>
+    <td>Тяжёлый барабанный танк</td>
+    <td>16,5</td>
+    <td>3,64</td>
+    <td>11,4</td>
+    <td>49,5</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>CS-63</th>
+    <td>Польша</td>
+    <td>Средний танк</td>
+    <td>Скоростной танк</td>
+    <td>8,3</td>
+    <td>7,23</td>
+    <td>9,7</td>
+    <td>40,0</td>
+</tr>
+<tr bgcolor="808080">
+    <th>Vickers Light 105</th>
+    <td>Великобритания</td>
+    <td>Лёгкий танк</td>
+    <td>Разведывательный танк</td>
+    <td>10,5</td>
+    <td>5,71</td>
+    <td>8,9</td>
+    <td>28,5</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>Manticore</th>
+    <td>Великобритания</td>
+    <td>Лёгкий танк</td>
+    <td>Разведывательный танк</td>
+    <td>12,0</td>
+    <td>5,0</td>
+    <td>9,1</td>
+    <td>27,0</td>
+</tr>
+<tr bgcolor="808080">
+    <th>EBR 105</th>
+    <td>Франция</td>
+    <td>Лёгкий танк</td>
+    <td>Бронеавтомобиль</td>
+    <td>9,5</td>
+    <td>6,32</td>
+    <td>9,9</td>
+    <td>15,0</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>T-100 LT</th>
+    <td>СССР</td>
+    <td>Лёгкий танк</td>
+    <td>Танк разведки</td>
+    <td>9,0</td>
+    <td>6,67</td>
+    <td>8,7</td>
+    <td>18,5</td>
+</tr>
+<tr bgcolor="808080">
+    <th>AMX 13 105</th>
+    <td>Франция</td>
+    <td>Лёгкий танк</td>
+    <td>Барабанный танк</td>
+    <td>22,0</td>
+    <td>2,73</td>
+    <td>9,5</td>
+    <td>14,0</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>Sheridan</th>
+    <td>США</td>
+    <td>Лёгкий танк</td>
+    <td>Лёгкий танк поддержки</td>
+    <td>12,0</td>
+    <td>5,0</td>
+    <td>9,6</td>
+    <td>15,2</td>
+</tr>
+<tr bgcolor="808080">
+    <th>Panhard EBR 90</th>
+    <td>Франция</td>
+    <td>Лёгкий танк</td>
+    <td>Бронеавтомобиль</td>
+    <td>9,3</td>
+    <td>6,45</td>
+    <td>8,9</td>
+    <td>12,5</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>Rhm.-Borsig Waffenträger</th>
+    <td>Германия</td>
+    <td>ПТ-САУ</td>
+    <td>Снайперская ПТ-САУ</td>
+    <td>11,5</td>
+    <td>5,22</td>
+    <td>9,5</td>
+    <td>30,0</td>
+</tr>
+<tr bgcolor="808080">
+    <th>Jagdtiger</th>
+    <td>Германия</td>
+    <td>ПТ-САУ</td>
+    <td>Танк поддержки</td>
+    <td>11,0</td>
+    <td>5,45</td>
+    <td>10,5</td>
+    <td>71,7</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>Strv S1</th>
+    <td>Швеция</td>
+    <td>ПТ-САУ</td>
+    <td>Снайперская ПТ-САУ</td>
+    <td>9,2</td>
+    <td>6,52</td>
+    <td>9,8</td>
+    <td>37,0</td>
+</tr>
+<tr bgcolor="808080">
+    <th>T95</th>
+    <td>США</td>
+    <td>ПТ-САУ</td>
+    <td>Штурмовая ПТ-САУ</td>
+    <td>14,0</td>
+    <td>4,29</td>
+    <td>12,5</td>
+    <td>86,2</td>
+</tr>
+<tr bgcolor="C0C0C0">
+    <th>FV217 Badger</th>
+    <td>Великобритания</td>
+    <td>ПТ-САУ</td>
+    <td>Штурмовая ПТ-САУ</td>
+    <td>9,0</td>
+    <td>6,67</td>
+    <td>10,4</td>
+    <td>77,5</td>
+</tr>
+<tr bgcolor="808080">
+    <th>ISU-152K</th>
+    <td>СССР</td>
+    <td>ПТ-САУ</td>
+    <td>ПТ-САУ поддержки</td>
+    <td>17,0</td>
+    <td>3,53</td>
+    <td>12,3</td>
+    <td>46,0</td>
+</tr>		
+</thead>
+</table>
+</body>
+</html>
